@@ -1,0 +1,58 @@
+# CSADD005 - Return Type has to be IEC compatible
+
+**Severity:** ![Error](../images/Error.png) Error
+
+IEC methods/functions have to return types that are compatible with IEC.
+IEC methods/functions that can have return values are methods that either:
+* have the attribute `[User]`
+* have the attribute `[Execution]`, are called `__Process` and are in a class with the attribute `[Function]`
+* have the attribute `[Function]` and are in a class with the attribute `[FunctionContainer]`
+
+**Explicitly allowed types are**
+
+CSharp basic types:
+
+* `bool`
+* `sbyte`
+* `short`
+* `int`
+* `long`
+* `byte`
+* `ushort`
+* `uint`
+* `ulong`
+* `float`
+* `double`
+
+.Net basic types:
+
+* `Boolean`
+* `SByte`
+* `Int16`
+* `Int32`
+* `Int64`
+* `Byte`
+* `UInt16`
+* `UInt32`
+* `UInt64`
+* `Single`
+* `Double`
+
+IEC types:
+
+* `IecStringEx`
+* `IecString80`
+* `IecWString`
+* `IecWString80`
+* `enums` attributed with `[Enumeration]`
+
+
+
+**Eplicitly forbidden:**
+
+* all `Any`* types [CSADD022](Rules/CSADD022.md)
+* Structures `[Structure]` or Arrays `[Array]` [CSADD022](Rules/CSADD022.md)
+
+## Solution
+
+Change the return type to one of the explicitly allowed types.
