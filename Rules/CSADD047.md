@@ -1,0 +1,11 @@
+# CSADD047 - Arrays must not have fields apart from the Anchor field
+
+**Severity:** ![Error](../images/Error.png) Error
+
+Structs with the Attribute `[Array]` must not have fields apart from the `Anchor` field.
+
+## Solution
+
+You can also use the provided automatic Code Fix to delete the field declaration. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+
+Remove the field declaration.

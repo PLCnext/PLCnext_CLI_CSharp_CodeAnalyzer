@@ -1,0 +1,11 @@
+# CSADD054 - Only use Function attribute in Function Container or on classes
+
+**Severity:** ![Error](../images/Error.png) Error
+
+Checks the use of the attribute `[Function]`, reports a diagnostic if it is not inside a class attributed with `[FunctionContainer]` or at a class.
+
+## Solution
+
+You can also use the provided automatic Code Fix to remove the attribute. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+
+Remove the attribute.

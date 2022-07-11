@@ -45,6 +45,6 @@ The correct mapping is shown inside the Readme.txt of each VS Template and looks
 
 ## Solution
 
-You can also use the provided automatic Code Fix to change the `[DataType]` attribute argument to all possible mappings to choose from. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+You can also use the provided automatic Code Fixes to change the `[DataType]` attribute argument to one of the possible mappings. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
 
 Change parameter type or IEC type in the `[DataType]` attribute to fit to each other.

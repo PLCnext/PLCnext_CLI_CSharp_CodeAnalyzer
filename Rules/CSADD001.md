@@ -10,14 +10,11 @@ The following attributes are deprecated and should not be used anymore:
 * `[FUNCTION_BLOCK]`
 * `[FUNCTION]`
 * `[PROGRAM]`
-
-
+* `[GdsRetain]`
 
 ## Solution
 
 You can also use the provided automatic Code Fix to replace the attributes with the new equivalents. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
-
-
 
 Replace the attributes with their new equivalent:
 
@@ -27,4 +24,4 @@ Replace the attributes with their new equivalent:
 * `[FUNCTION_BLOCK]` --> `[FunctionBlock]`
 * `[FUNCTION]` --> `[Function]`
 * `[PROGRAM]` --> `[Program]`
-
+* `[GdsRetain]` --> `[Retain]`

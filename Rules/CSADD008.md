@@ -23,6 +23,6 @@ Ambiguous types and their IEC types are shown in the following table (all mappin
 | ---      | `System.Iec61131Lib.Any` | `ANY`, `ANY_MAGNITUDE`, `ANY_NUM`, `ANY_INT`, `ANY_SIGNED`, `ANY_UNSIGNED`, `ANY_REAL`, `ANY_BIT`, `ANY_ELEMENTARY`, `ANY_STRING` |
 ## Solution
 
-You can also use the provided automatic Code Fix to add a `[DataType]` attribute with all possible mappings inside to choose from. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+You can also use the provided automatic Code Fixes to add a `[DataType]` attribute with one of the possible mappings inside. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu)
 
 Insert a `[DataType]` attribute with the name of the IEC type you want to map to.
