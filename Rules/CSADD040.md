@@ -1,13 +1,12 @@
-# CSADD040 - Only Init methods of pointer arrays may be unsafe
+# CSADD040 - Structure parameters should be ref Output
 
-**Severity:** ![Warning](../images/Warning.png) Warning
+**Severity:** ![Suggestion](../images/Suggestion.png) Suggestion
 
-The `Init()` method of a user type (`struct` 's attributed with `[Structure]`, `[Array]` or `[String]`) should not be `unsafe`.
-`[Array]`s that have a pointer type `Anchor` field are an exception to this rule.
+Parameters that are of user types (`struct`s attributed with `[Structure]`, `[Array]` or `[String]`) should not be attributed with ` [Input]` or `[InOut]` and they should have a `ref` keyword.
+A better performance is possible using the attribute `[Output]` and `ref` which uses call by reference.
 
 ## Solution
 
-You can also use the provided automatic Code Fix to remove the `unsafe` keyword. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+You can also use the provided automatic Code Fix to change the attribute to `[Output]` and/or add the keyword `ref`. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
 
-
-Remove the `unsafe` keyword.
+Change the attribute to  `[Output]` and/or add the keyword `ref`.

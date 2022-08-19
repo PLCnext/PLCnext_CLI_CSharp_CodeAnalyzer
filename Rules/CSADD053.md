@@ -1,8 +1,8 @@
-# CSADD053 - GdsRetain should only be used in FB or Program
+# CSADD053 - Retaining should only be used in FB or Program
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Checks the attribute `[GdsRetain]`, reports a diagnostic if it is not inside a class attributed with `[FunctionBlock]` or `[Program]`.
+Checks the attributes `[GdsRetain]`and `[Retain]`, reports a diagnostic one is not inside a class attributed with `[FunctionBlock]` or `[Program]`.
 
 ## Solution
 

@@ -21,7 +21,7 @@ and the first parameter
 
 the parameter type is checked instead of the return type.
 
-
+One correct mapping is a user defined type (`struct`s with attributes `[Structure]`, `[Array]` or `[String]` or `enum`s with the `[Enumeration]` attribute) and its name.
 The Correct mapping is shown inside the Readme.txt of each VS Template and looks like this:
 
 | IEC 61131-3         | .NET Framework                   | C#       |

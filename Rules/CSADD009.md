@@ -2,7 +2,7 @@
 
 **Severity:** ![Suggestion](../images/Suggestion.png) Suggestion
 
-When the parameter type (attributed with `[Output]`, ` [Input]` or `[InOut]`) of IEC methods/functions (attributed with `[User]`, `[Initialization]` or `[Execution]`) can be mapped to multiple IEC types, a default type is used.
+When the parameter type of parameters attributed with `[Output]`, `[Input]` or `[InOut]` can be mapped to multiple IEC types, a default type is used.
 Consider using the `[DataType]`attribute to explicitly choose a mapped type.
 
 Ambiguous types and their IEC types are shown in the following table (all mappings are shown inside the Readme.txt of each VS Template). If no `[DataType]` attribute is specified the type is mapped by default to the IEC data type in **bold** letters:

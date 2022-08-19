@@ -3,7 +3,7 @@
 **Severity:** ![Error](../images/Error.png) Error
 
 Checks user `[Array]`s (`struct`s with the attribute `[Array]`).
-The `Anchor` has to be of a type that is compatible with IEC.
+The `Anchor` has to be of a type that is compatible with IEC and not the type `Any`.
 
 * **Explicitly allowed types are**
 

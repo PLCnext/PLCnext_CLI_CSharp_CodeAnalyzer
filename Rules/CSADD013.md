@@ -2,8 +2,9 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-The `[DataType]` attribute of fields attributed with `[Output]`, ` [Input]` , `[InOut]`, `[InPort]` and `[OutPort]` has to fit to the parameter type.
+The `[DataType]` attribute of fields attributed with `[Local]`, `[Output]`, ` [Input]` , `[InOut]`, `[InPort]` and `[OutPort]` has to fit to the parameter type.
 
+One correct mapping is a user defined type (`struct`s with attributes `[Structure]`, `[Array]` or `[String]` or `enum`s with the `[Enumeration]` attribute) and its name.
 The correct mapping is shown inside the Readme.txt of each VS Template and looks like this:
 
 | IEC 61131-3      | .NET Framework                    | C#       |

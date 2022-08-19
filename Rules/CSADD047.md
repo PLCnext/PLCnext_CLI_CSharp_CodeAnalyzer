@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Structs with the Attribute `[Array]` must not have fields apart from the `Anchor` field.
+Structs with the Attribute `[Array]` must not have (not `const`) fields apart from the `Anchor` field.
 
 ## Solution
 

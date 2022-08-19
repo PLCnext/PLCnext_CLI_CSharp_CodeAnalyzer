@@ -40,10 +40,6 @@ CSharp basic types:
 
 IEC types:
 
-* `IecStringEx`
-* `IecString80`
-* `IecWString`
-* `IecWString80`
 * `enums` attributed with `[Enumeration]`
 
 
@@ -52,6 +48,7 @@ IEC types:
 
 * all `Any`* types [CSADD022](Rules/CSADD022.md)
 * Structures `[Structure]` or Arrays `[Array]` [CSADD022](Rules/CSADD022.md)
+* `IecStringEx`, `IecString80`, `IecWString`, `IecWString80` TODO-LINKING
 
 ## Solution
 

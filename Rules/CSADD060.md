@@ -6,6 +6,7 @@ Checks all `[Hidden]` attributes, reports if not used on:
 * `struct`s attributed with `[Array]`, `[Structure]` or `[String]`
 * or `enum`s attributed with `[Enumeration]`
 * or `class`es attributed with `[Function]`, `[FunctionBlock]`, `[FunctionContainer]` or `[Program]`
+* or methods of classes attributed with `[FunctionContainer]`
 
 ## Solution
 

@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Classes with the attribute `[Function]` are not allowed to have fields attributed with `[Output]`, ` [Input]` or `[InOut]`.
+Classes with the attribute `[Function]` are not allowed to have fields attributed with `[Local]`, `[Output]`, ` [Input]`, `[InOut]`, `[InputPort]` or `[OutputPort]`.
 
 
 ## Solution

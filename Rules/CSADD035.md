@@ -3,7 +3,7 @@
 **Severity:** ![Error](../images/Error.png) Error
 
 Checks user `[Structure]`s (`struct`s with the attribute `[Structure]`).
-All fields have to be of a type that is compatible with IEC.
+All fields have to be of a type that is compatible with IEC and not `Any`.
 
 **Explicitly allowed types are**
 

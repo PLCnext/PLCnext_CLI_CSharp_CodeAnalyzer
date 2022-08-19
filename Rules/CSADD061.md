@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Checks all `[NotOverridable]` attributes, reports if not used on classes attributed with `[Function]`, `[FunctionBlock]`, `[FunctionContainer]` or `[Program]`.
+Checks all `[NotOverridable]` attributes, reports if not used on classes attributed with `[Function]`, `[FunctionBlock]`, `[FunctionContainer]` or `[Program]` or methods of classes attributed with `[FunctionContainer]`.
 
 ## Solution
 

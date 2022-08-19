@@ -5,9 +5,8 @@
 Checks user `[Array]`s (`[struct]`s with the attribute `[Array]`).
 The `[DataType]` attribute of the `Anchor` has to fit to the Anchor type.
 
+One correct mapping is a user defined type (`struct`s with attributes `[Structure]`, `[Array]` or `[String]` or `enum`s with the `[Enumeration]` attribute) and its name.
 The correct mapping is shown inside the Readme.txt of each VS Template and looks like this:
-
-
 
 | IEC 61131-3      | .NET Framework                    | C#       |
 | ---------------- | --------------------------------- | -------- |

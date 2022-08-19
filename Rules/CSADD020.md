@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Methods with the attribute `[Execution]` or `[Initialization]` must not have parameters
+Methods with the attribute `[Execution]` or `[Initialization]` in classes attributed with `[FunctionBlock]` or `[Program]` must not have parameters.
 
 ## Solution
 

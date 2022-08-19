@@ -45,13 +45,13 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD012](Rules/CSADD012.md)      | Parameter type needs correct DataType attribute                                                      | ![Error](images/Error.png) Error                |
 | [CSADD013](Rules/CSADD013.md)      | Field type needs correct DataType attribute                                                          | ![Error](images/Error.png) Error                |
 | [CSADD014](Rules/CSADD014.md)      | Output fields/parameters must not be Any                                                             | ![Error](images/Error.png) Error                |
-| [CSADD017](Rules/CSADD017.md)      | Structure fields and parameters should be InOut                                                      | ![Suggestion](images/Suggestion.png) Suggestion |
+| [CSADD017](Rules/CSADD017.md)      | Structure fields should be InOut                                                                     | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD018](Rules/CSADD018.md)      | Structure fields should be pointers                                                                  | ![Warning](images/Warning.png) Warning          |
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
 | [CSADD020](Rules/CSADD020.md)      | Methods attributed Execution or Initialization are not allowed to have parameters                    | ![Error](images/Error.png) Error                |
 | [CSADD021](Rules/CSADD021.md)      | Methods can only have one Output parameter at the first position                                     | ![Error](images/Error.png) Error                |
 | [CSADD022](Rules/CSADD022.md)      | Return types must not be of an Any type or a structure                                               | ![Error](images/Error.png) Error                |
-| [CSADD023](Rules/CSADD023.md)      | Program port types must not be of an Any type or a structure with Any type fields                    | ![Error](images/Error.png) Error                |
+| [CSADD023](Rules/CSADD023.md)      | Program port types must not be of type Any                                                           | ![Error](images/Error.png) Error                |
 | [CSADD024](Rules/CSADD024.md)      | Silently reports any struct declaration to provide templates for User Array, Structure and String    | Silent                                          |
 | [CSADD025](Rules/CSADD025.md)      | IEC Array pattern has to be correct                                                                  | ![Error](images/Error.png) Error                |
 | [CSADD026](Rules/CSADD026.md)      | IEC String Pattern has to be correct                                                                 | ![Error](images/Error.png) Error                |
@@ -68,7 +68,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD037](Rules/CSADD037.md)      | Program must not have Input Output or InOut attributes                                               | ![Error](images/Error.png) Error                |
 | [CSADD038](Rules/CSADD038.md)      | Init Methods of user types must not have an Initialization attribute                                 | ![Warning](images/Warning.png) Warning          |
 | [CSADD039](Rules/CSADD039.md)      | User type Init methods must not have parameters                                                      | ![Error](images/Error.png) Error                |
-| [CSADD040](Rules/CSADD040.md)      | Only Init methods of pointer arrays may be unsafe                                                    | ![Warning](images/Warning.png) Warning          |
+| [CSADD040](Rules/CSADD040.md)      | Structure parameters should be ref Output                                                            | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD041](Rules/CSADD041.md)      | Init/ctor must only be called once in Init or __Init                                                 | ![Error](images/Error.png) Error                |
 | [CSADD042](Rules/CSADD042.md)      | unsafe blocks are only allowed when pointers are used inside                                         | ![Warning](images/Warning.png) Warning          |
 | [CSADD043](Rules/CSADD043.md)      | Output parameter name unequal to class name                                                          | ![Error](images/Error.png) Error                |
@@ -76,14 +76,14 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD045](Rules/CSADD045.md)      | Output parameter must be ref or out                                                                  | ![Error](images/Error.png) Error                |
 | [CSADD046](Rules/CSADD046.md)      | Function Container Functions have to be static                                                       | ![Error](images/Error.png) Error                |
 | [CSADD047](Rules/CSADD047.md)      | Arrays must not have fields apart from the Anchor field                                              | ![Error](images/Error.png) Error                |
-| [CSADD048](Rules/CSADD048.md)      | Only use Initialization and Execution in FB and Program                                              | ![Error](images/Error.png) Error                |
+| [CSADD048](Rules/CSADD048.md)      | Only use Initialization and Execution where correct                                                  | ![Error](images/Error.png) Error                |
 | [CSADD049](Rules/CSADD049.md)      | User attribute should only be used in Function Blocks	                                            | ![Error](images/Error.png) Error                |
 | [CSADD050](Rules/CSADD050.md)      | Input or Output fields and parameters shall not be pointers                                          | ![Error](images/Error.png) Error                |
 | [CSADD051](Rules/CSADD051.md)      | Structures must not have Any or Pointer fields	                                                    | ![Error](images/Error.png) Error                |
-| [CSADD052](Rules/CSADD052.md)      | GdsRetain on Input can be better achieved with Variable Flag	                                        | ![Warning](images/Warning.png) Warning          |
-| [CSADD053](Rules/CSADD053.md)      | GdsRetain should only be used in FB or Program	                                                    | ![Error](images/Error.png) Error                |
+| [CSADD052](Rules/CSADD052.md)      | Retaining on Input can be better achieved with Variable Flag	                                        | ![Warning](images/Warning.png) Warning          |
+| [CSADD053](Rules/CSADD053.md)      | Retaining should only be used in FB or Program	                                                    | ![Error](images/Error.png) Error                |
 | [CSADD054](Rules/CSADD054.md)      | Only use Function attribute in Function Container or on classes                                      | ![Error](images/Error.png) Error                |
-| [CSADD055](Rules/CSADD055.md)      | Strings must not have fields apart from the IecStringEx s field                                      | ![Error](images/Error.png) Error                |
+| [CSADD055](Rules/CSADD055.md)      | Strings must not have fields apart from the s field                                                  | ![Error](images/Error.png) Error                |
 | [CSADD056](Rules/CSADD056.md)      | Do not use intern attributes	                                                                        | ![Error](images/Error.png) Error                |
 | [CSADD058](Rules/CSADD058.md)      | Do not mix Retain and GdsRetain		                                                                | ![Error](images/Error.png) Error                |
 | [CSADD059](Rules/CSADD059.md)      | Only use Retaining where possible                                                                    | ![Error](images/Error.png) Error                |
@@ -102,7 +102,7 @@ You can also suppress a rule only for a single code region [using the context me
 * IEC type defined in DataType attributes have to suit the C# dotnet type
   * [CSADD011](Rules/CSADD011.md) [CSADD012](Rules/CSADD012.md) [CSADD0013 ](Rules/CSADD0013.md)[CSADD036](Rules/CSADD036.md) [CSADD032](Rules/CSADD032.md)
 * special rules for the type Any (and User Types)
-  * [CSADD014](Rules/CSADD014.md) [CSADD017](Rules/CSADD017.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md)
+  * [CSADD014](Rules/CSADD014.md) [CSADD017](Rules/CSADD017.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) 
 
 ### IEC element structure
 
@@ -135,7 +135,7 @@ You can also suppress a rule only for a single code region [using the context me
 
 ### Pointers and References
 
-* [CSADD004](Rules/CSADD004.md) [CSADD018](Rules/CSADD018.md) [CSADD040](Rules/CSADD040.md) [CSADD042](Rules/CSADD042.md) [CSADD050](Rules/CSADD050.md)
+* [CSADD004](Rules/CSADD004.md) [CSADD018](Rules/CSADD018.md) [CSADD042](Rules/CSADD042.md) [CSADD050](Rules/CSADD050.md)
 
 ### Attribute Usage
 
@@ -143,7 +143,7 @@ You can also suppress a rule only for a single code region [using the context me
   * [CSADD001](Rules/CSADD001.md)
 * `[User]`
   * [CSADD049](Rules/CSADD049.md)
-* `[GdsRetain]`
+* `[GdsRetain]` and `[Retain]`
   * [CSADD053](Rules/CSADD053.md) [CSADD052](Rules/CSADD052.md) 
 * `[Function]`
   * [CSADD054](Rules/CSADD054.md)

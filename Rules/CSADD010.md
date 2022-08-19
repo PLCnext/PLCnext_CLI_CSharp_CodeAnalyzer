@@ -2,7 +2,7 @@
 
 **Severity:** ![Suggestion](../images/Suggestion.png) Suggestion
 
-When the type of a field attributed with `[Output]`, ` [Input]`, `[InOut]`, `[InPort]` and `[OutPort]` can be mapped to multiple IEC types a default type is used.
+When the type of a field attributed with `[Local]`, `[Output]`, ` [Input]`, `[InOut]`, `[InPort]` and `[OutPort]` can be mapped to multiple IEC types a default type is used.
 Consider using the `[DataType]` attribute to explicitly choose a mapped type.
 
 Ambiguous types and their IEC types are shown in the following table (all mappings are shown inside the Readme.txt of each VS Template). If no `[DataType]` attribute is specified the type is mapped by default to the IEC data type in **bold** letters:

@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-The `__Init()` method (in classes attributed with `[FunctionBlock]`) and the `Init()` method of a user type (`struct` 's attributed with `[Structure]`, `[Array]` or `[String]`) must only call `ctor()`/`Init()` once on their fields.
+The `__Init()` method (in classes attributed with `[FunctionBlock]` or `[Program]`) and the `Init()` method of a user type (`struct` 's attributed with `[Structure]`, `[Array]` or `[String]`) must only call `ctor()`/`Init()` once on their fields.
 
 ## Solution
 

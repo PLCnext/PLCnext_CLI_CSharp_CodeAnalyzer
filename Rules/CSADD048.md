@@ -1,8 +1,11 @@
-# CSADD048 - Only use Initialization and Execution in FB and Program
+# CSADD048 - Only use Initialization and Execution where correct
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Checks the attributes `[Initialization]` and `[Execution]`, reports a diagnostic if they are not inside a class attributed with `[FunctionBlock]` or `[Program]`.
+Checks the attributes `[Initialization]` and `[Execution]`, reports a diagnostic if they are not inside a class attributed with a valid attribute.
+
+`[Initialization]` is valid in classes with `[FunctionBlock]` or `[Program]`.
+`[Execution]` is valid in classes with `[FunctionBlock]`, `[Function]` or `[Program]`.
 
 ## Solution
 

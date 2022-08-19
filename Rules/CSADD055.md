@@ -1,8 +1,8 @@
-# CSADD055 - Strings must not have fields apart from the IecStringEx s field
+# CSADD055 - Strings must not have fields apart from the s field
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Checks all `struct`s attributed with `[String]`, if they have fields apart from the `IecStringEx s` field a diagnostic is reported.
+Checks all `struct`s attributed with `[String]`, if they have fields apart from the `IecStringEx s`/`IecWString s` field. a diagnostic is reported.
 
 ## Solution
 

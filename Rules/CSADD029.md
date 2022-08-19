@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-For all fields (with the attribute `[Output]`, ` [Input]` or `[InOut]`) of `[FunctionBlock]`s (classes attributed with `[FunctionBlock]`) 
+For all fields with the attribute `[Output]`, ` [Input]` or `[Local]` of `[FunctionBlock]`s (classes attributed with `[FunctionBlock]`) 
 that provide an `Init()` or `ctor()` method, the method has to be called in the `__Init()` method of the `[FunctionBlock]`.
 The method looks like this:
 

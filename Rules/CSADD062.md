@@ -2,10 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Checks all `[OPC]`, `[Ehmi]`, `[ProfiCloud]` and `[Redundant]` attributes, reports if one is not:
-
-    on fields of classes attributed with `[FunctionBlock]` or `[Program]`
-    being of primitive or string/wstring type
+Checks all `[OPC]`, `[Ehmi]`, `[ProfiCloud]` and `[Redundant]` attributes, reports if one is not on fields of classes attributed with `[FunctionBlock]` or `[Program]` that are of primitive type, `IecString`/`IecWString` type or a user defined string type (a `struct` with the `[String]` attribute)
 
 ## Solution
 

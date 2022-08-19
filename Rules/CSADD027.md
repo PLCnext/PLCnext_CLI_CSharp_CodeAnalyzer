@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-All `struct`s with the attribute `[Structure]` have to be `public`. All fields of the `struct`  have to be `public` as well.
+All `struct`s with the attribute `[Structure]` have to be `public`. All fields of the `struct`  have to be `public` as well (exception `const` or `static` fields).
 
 ## Solution
 

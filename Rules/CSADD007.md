@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-All fields attributed with `[Output]`, `[Input]`, `[InOut]`, `[InPort]` or `[OutPort]` have to be of a type compatible with IEC.
+All fields attributed with `[Local]`, `[Output]`, `[Input]`, `[InOut]`, `[InPort]` or `[OutPort]` have to be of a type compatible with IEC.
 
 **Explicitly allowed types are**
 

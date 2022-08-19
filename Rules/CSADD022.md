@@ -11,6 +11,6 @@ IEC methods/functions that can have return values are methods that either:
 
 ## Solution
 
-You can also use the provided automatic Code Fix to convert the return type into an `[InOut]` parameters. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+You can also use the provided automatic Code Fix to convert the return type into an `[Output]` parameters. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
 
-Convert the return to a parameter attributed with `[InOut]`.
+Convert the return to a parameter attributed with `[Output]`.

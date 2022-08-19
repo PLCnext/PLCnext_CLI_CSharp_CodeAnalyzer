@@ -4,6 +4,7 @@
 
 The `[DataType]` attribute of parameters (attributed with `[Output]`, ` [Input]` or `[InOut]`) of IEC methods/functions (attributed with `[User]`, `[Initialization]` or `[Execution]`) has to fit to the parameter type.
 
+One correct mapping is a user defined type (`struct`s with attributes `[Structure]`, `[Array]` or `[String]` or `enum`s with the `[Enumeration]` attribute) and its name.
 The correct mapping is shown inside the Readme.txt of each VS Template and looks like this:
 
 | IEC 61131-3      | .NET Framework                    | C#       |
