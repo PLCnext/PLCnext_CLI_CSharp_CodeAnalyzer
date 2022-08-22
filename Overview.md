@@ -45,8 +45,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD012](Rules/CSADD012.md)      | Parameter type needs correct DataType attribute                                                      | ![Error](images/Error.png) Error                |
 | [CSADD013](Rules/CSADD013.md)      | Field type needs correct DataType attribute                                                          | ![Error](images/Error.png) Error                |
 | [CSADD014](Rules/CSADD014.md)      | Output fields/parameters must not be Any                                                             | ![Error](images/Error.png) Error                |
-| [CSADD017](Rules/CSADD017.md)      | Structure fields should be InOut                                                                     | ![Suggestion](images/Suggestion.png) Suggestion |
-| [CSADD018](Rules/CSADD018.md)      | Structure fields should be pointers                                                                  | ![Warning](images/Warning.png) Warning          |
+| [CSADD018](Rules/CSADD018.md)      | Structure fields should be InOut pointers                                                            | ![Warning](images/Warning.png) Warning          |
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
 | [CSADD020](Rules/CSADD020.md)      | Methods attributed Execution or Initialization are not allowed to have parameters                    | ![Error](images/Error.png) Error                |
 | [CSADD021](Rules/CSADD021.md)      | Methods can only have one Output parameter at the first position                                     | ![Error](images/Error.png) Error                |
@@ -102,7 +101,7 @@ You can also suppress a rule only for a single code region [using the context me
 * IEC type defined in DataType attributes have to suit the C# dotnet type
   * [CSADD011](Rules/CSADD011.md) [CSADD012](Rules/CSADD012.md) [CSADD0013 ](Rules/CSADD0013.md)[CSADD036](Rules/CSADD036.md) [CSADD032](Rules/CSADD032.md)
 * special rules for the type Any (and User Types)
-  * [CSADD014](Rules/CSADD014.md) [CSADD017](Rules/CSADD017.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) 
+  * [CSADD014](Rules/CSADD014.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) 
 
 ### IEC element structure
 
