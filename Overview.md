@@ -45,6 +45,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD012](Rules/CSADD012.md)      | Parameter type needs correct DataType attribute                                                      | ![Error](images/Error.png) Error                |
 | [CSADD013](Rules/CSADD013.md)      | Field type needs correct DataType attribute                                                          | ![Error](images/Error.png) Error                |
 | [CSADD014](Rules/CSADD014.md)      | Output fields/parameters must not be Any                                                             | ![Error](images/Error.png) Error                |
+| [CSADD015](Rules/CSADD015.md)      | Do not use GdsRetain                                                                                 | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD018](Rules/CSADD018.md)      | Structure fields should be InOut pointers                                                            | ![Warning](images/Warning.png) Warning          |
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
 | [CSADD020](Rules/CSADD020.md)      | Methods attributed Execution or Initialization are not allowed to have parameters                    | ![Error](images/Error.png) Error                |
@@ -153,7 +154,7 @@ You can also suppress a rule only for a single code region [using the context me
 * `[Skip]` and `[ReadOnly]`
   * [CSADD056](Rules/CSADD056.md)
 * `[Retain]` and `[GdsRetain]`
-  * [CSADD058](Rules/CSADD058.md) [CSADD059](Rules/CSADD059.md)
+  * [CSADD058](Rules/CSADD058.md) [CSADD059](Rules/CSADD059.md) [CSADD015](Rules/CSADD015.md)
 * `[Hidden]`
   * [CSADD060](Rules/CSADD060.md)
 * `[NotOverridable]`

@@ -10,7 +10,6 @@ The following attributes are deprecated and should not be used anymore:
 * `[FUNCTION_BLOCK]`
 * `[FUNCTION]`
 * `[PROGRAM]`
-* `[GdsRetain]`
 
 ## Solution
 
@@ -24,4 +23,3 @@ Replace the attributes with their new equivalent:
 * `[FUNCTION_BLOCK]` --> `[FunctionBlock]`
 * `[FUNCTION]` --> `[Function]`
 * `[PROGRAM]` --> `[Program]`
-* `[GdsRetain]` --> `[Retain]`
