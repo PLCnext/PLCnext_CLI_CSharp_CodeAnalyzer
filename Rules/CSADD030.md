@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](../images/Error.png) Error
 
-For all fields that provide an `Init()` or `ctor()` method of user Structures (`struct`s attributed with `[Structure]`, `[Array]` or `[String]`), the method has to be called in the `Init()` method of the Structure.
+For all fields that provide an `Init()` or `ctor()` method of `struct`s attributed with `[Structure]`, the method has to be called in the `Init()` method of the Structure.
 The method looks like this:
 
 ```c#

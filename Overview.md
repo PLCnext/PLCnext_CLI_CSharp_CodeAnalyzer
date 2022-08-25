@@ -50,7 +50,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
 | [CSADD020](Rules/CSADD020.md)      | Methods attributed Execution or Initialization are not allowed to have parameters                    | ![Error](images/Error.png) Error                |
 | [CSADD021](Rules/CSADD021.md)      | Methods can only have one Output parameter at the first position                                     | ![Error](images/Error.png) Error                |
-| [CSADD022](Rules/CSADD022.md)      | Return types must not be of an Any type or a structure                                               | ![Error](images/Error.png) Error                |
+| [CSADD022](Rules/CSADD022.md)      | Return types must not be Any or IecString or user structure                                          | ![Error](images/Error.png) Error                |
 | [CSADD023](Rules/CSADD023.md)      | Program port types must not be of type Any                                                           | ![Error](images/Error.png) Error                |
 | [CSADD024](Rules/CSADD024.md)      | Silently reports any struct declaration to provide templates for User Array, Structure and String    | Silent                                          |
 | [CSADD025](Rules/CSADD025.md)      | IEC Array pattern has to be correct                                                                  | ![Error](images/Error.png) Error                |
@@ -85,11 +85,25 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD054](Rules/CSADD054.md)      | Only use Function attribute in Function Container or on classes                                      | ![Error](images/Error.png) Error                |
 | [CSADD055](Rules/CSADD055.md)      | Strings must not have fields apart from the s field                                                  | ![Error](images/Error.png) Error                |
 | [CSADD056](Rules/CSADD056.md)      | Do not use intern attributes	                                                                        | ![Error](images/Error.png) Error                |
+| [CSADD057](Rules/CSADD057.md)      | Namespace names must not be keywords                                                                 | ![Error](images/Error.png) Error                |
 | [CSADD058](Rules/CSADD058.md)      | Do not mix Retain and GdsRetain		                                                                | ![Error](images/Error.png) Error                |
 | [CSADD059](Rules/CSADD059.md)      | Only use Retaining where possible                                                                    | ![Error](images/Error.png) Error                |
 | [CSADD060](Rules/CSADD060.md)      | Only use Hidden on user defined data types and POUs	                                                | ![Error](images/Error.png) Error                |
 | [CSADD061](Rules/CSADD061.md)      | Only use NotOverridable on POUs	                                                                    | ![Error](images/Error.png) Error                |
 | [CSADD062](Rules/CSADD062.md)      | Only use OPC, Ehmi, ProfiCloud and Redundant where possible                                          | ![Error](images/Error.png) Error                |
+| [CSADD063](Rules/CSADD063.md)      | Only use Native where possible                                                                       | ![Error](images/Error.png) Error                |
+| [CSADD064](Rules/CSADD064.md)      | Exported fields have to be public                                                                    | ![Error](images/Error.png) Error                |
+| [CSADD065](Rules/CSADD065.md)      | Do not use the suffix attribute when using attributes                                                | ![Error](images/Error.png) Error                |
+| [CSADD066](Rules/CSADD066.md)      | Methods returning values must not have Output parameters                                             | ![Error](images/Error.png) Error                |
+| [CSADD067](Rules/CSADD067.md)      | Do not use partial                                                                                   | ![Warning](images/Warning.png) Warning          |
+| [CSADD068](Rules/CSADD068.md)      | Initialize all Array elements                                                                        | ![Error](images/Error.png) Error                |
+| [CSADD069](Rules/CSADD069.md)      | Only Initialize in Init method                                                                       | ![Error](images/Error.png) Error                |
+| [CSADD070](Rules/CSADD070.md)      | Only use Invisible where possible                                                                    | ![Error](images/Error.png) Error                |
+| [CSADD071](Rules/CSADD071.md)      | Method parameters and fields of FunctionBlocks need different names                                  | ![Error](images/Error.png) Error                |
+| [CSADD072](Rules/CSADD072.md)      | Use Init instead of old ctor                                                                         | ![Warning](images/Warning.png) Warning          |
+| [CSADD073](Rules/CSADD073.md)      | rctor is deprecated                                                                                  | ![Warning](images/Warning.png) Warning          |
+| [CSADD074](Rules/CSADD074.md)      | Multidimensional Arrays are not supported yet                                                        | ![Error](images/Error.png) Error                |
+| [CSADD075](Rules/CSADD075.md)      | Only use Eno where possible                                                                          | ![Error](images/Error.png) Error                |
 
 ## Rule  groups
 
@@ -101,7 +115,7 @@ You can also suppress a rule only for a single code region [using the context me
   * [CSADD008](Rules/CSADD008.md) [CSADD009](Rules/CSADD009.md) [CSADD0010](Rules/CSADD0010.md)  [CSADD034 ](Rules/CSADD034.md)[CSADD031](Rules/CSADD031.md)
 * IEC type defined in DataType attributes have to suit the C# dotnet type
   * [CSADD011](Rules/CSADD011.md) [CSADD012](Rules/CSADD012.md) [CSADD0013 ](Rules/CSADD0013.md)[CSADD036](Rules/CSADD036.md) [CSADD032](Rules/CSADD032.md)
-* special rules for the type Any (and User Types)
+* special rules for the type Any (and User Types and IecStrings)
   * [CSADD014](Rules/CSADD014.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) 
 
 ### IEC element structure
@@ -109,7 +123,7 @@ You can also suppress a rule only for a single code region [using the context me
 [CSADD002](Rules/CSADD002.md) [CSADD020](Rules/CSADD020.md) [CSADD021](Rules/CSADD021.md)
 
 * `[FunctionBlock]`
-  * [CSADD003](Rules/CSADD003.md)
+  * [CSADD003](Rules/CSADD003.md) [CSADD071](Rules/CSADD071.md)
 * `[Function]`
   * [CSADD003](Rules/CSADD003.md) [CSADD019](Rules/CSADD019.md)
  * `[FunctionContainer]`
@@ -121,15 +135,19 @@ You can also suppress a rule only for a single code region [using the context me
   * `[String]`
     * [CSADD026](Rules/CSADD026.md) [CSADD028](Rules/CSADD028.md) [CSADD055](Rules/CSADD055.md)
   * `[Structure]`
-    * [CSADD027](Rules/CSADD027.md) [CSADD051](Rules/CSADD051.md)
+    * [CSADD027](Rules/CSADD027.md) [CSADD051](Rules/CSADD051.md) [CSADD069](Rules/CSADD069.md)
   * `[Array]`
-    * [CSADD025](Rules/CSADD025.md) [CSADD047](Rules/CSADD047.md)
+    * [CSADD025](Rules/CSADD025.md) [CSADD047](Rules/CSADD047.md) [CSADD068](Rules/CSADD068.md) [CSADD074](Rules/CSADD074.md)
 
 ### IEC type Initialization
 
 * [CSADD041](Rules/CSADD041.md)
-* User Types
+* [CSADD072](Rules/CSADD072.md)
+* [CSADD073](Rules/CSADD073.md)
+* `[Structure]`
   * [CSADD030](Rules/CSADD030.md)
+* `[Array]`
+  * [CSADD068](Rules/CSADD068.md)
 * `[FunctionBlock]`
   * [CSADD029](Rules/CSADD029.md)
 
@@ -141,6 +159,10 @@ You can also suppress a rule only for a single code region [using the context me
 
 * Deprecated Attributes
   * [CSADD001](Rules/CSADD001.md)
+* Attribute suffix
+  * [CSADD065](Rules/CSADD065.md)
+* `[Input]`, `[Output]`, `[InOut]`, `[Local]`, `[InputPort]` and `[OutputPort]`
+  *  [CSADD064](Rules/CSADD064.md)
 * `[User]`
   * [CSADD049](Rules/CSADD049.md)
 * `[GdsRetain]` and `[Retain]`
@@ -148,7 +170,7 @@ You can also suppress a rule only for a single code region [using the context me
 * `[Function]`
   * [CSADD054](Rules/CSADD054.md)
 * `[Output]`
-  * [CSADD043](Rules/CSADD043.md) [CSADD044](Rules/CSADD044.md) [CSADD045](Rules/CSADD045.md)
+  * [CSADD043](Rules/CSADD043.md) [CSADD044](Rules/CSADD044.md) [CSADD045](Rules/CSADD045.md) [CSADD066](Rules/CSADD066.md)
 * `[Initialization]` and `[Execution]`
   * [CSADD048](Rules/CSADD048.md)
 * `[Skip]` and `[ReadOnly]`
@@ -161,3 +183,9 @@ You can also suppress a rule only for a single code region [using the context me
   * [CSADD061](Rules/CSADD061.md)
 * `[OPC]`, `[Ehmi]`, `[ProfiCloud]` and `[Redundant]`
   * [CSADD062](Rules/CSADD062.md)
+* `[Native]`
+  * [CSADD063](Rules/CSADD063.md)
+* `[Invisible]`
+  * [CSADD070](Rules/CSADD070.md)
+* `[Eno]`
+  * [CSADD075](Rules/CSADD075.md)

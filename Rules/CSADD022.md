@@ -1,8 +1,8 @@
-# CSADD022 - Return types must not be of an Any type or a structure
+# CSADD022 - Return types must not be Any or IecString or user structure
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Return types of IEC methods/functions must not be of the type `Any` or a user type (`struct`s attributed with `[Structure]`, `[Array]` or `[String]`).
+Return types of IEC methods/functions must not be of the type `Any`, `IecStringEx`, `IecString80`, `IecWString` or `IecWString80` or a user type (`struct`s attributed with `[Structure]`, `[Array]` or `[String]`).
 IEC methods/functions that can have return values are methods that either:
 
 * have the attribute `[User]`
@@ -11,6 +11,6 @@ IEC methods/functions that can have return values are methods that either:
 
 ## Solution
 
-You can also use the provided automatic Code Fix to convert the return type into an `[Output]` parameters. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+You can also use the provided automatic Code Fix to convert the return type into an `[Output] ref` parameter. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
 
-Convert the return to a parameter attributed with `[Output]`.
+Convert the return to a parameter attributed with `[Output] ref`.

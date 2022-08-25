@@ -1,0 +1,14 @@
+# CSADD074 - Multidimensional Arrays are not supported yet
+
+**Severity:** ![Error](images/Error.png) Error
+
+Reports the attribute if:
+* the first parameter of the attribute `[Array]` is not `1`.
+* Reports if there are multiple `[ArrayDimension]` attributes at the same struct.
+* Reports if the first parameter of the attribute `[ArrayDimension]` is not `0`.
+
+## Solution
+
+You can also use the provided automatic Code Fix to set the first parameter of the attribute `[Array]` to `1`, the first parameter of the attribute `[ArrayDimension]` to `0` and removes duplicated `[ArrayDimension]` attributes. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu)
+
+Set the first parameter of the attribute `[Array]` to `1`, the first parameter of the attribute `[ArrayDimension]` to `0` and removes duplicated `[ArrayDimension]` attributes.

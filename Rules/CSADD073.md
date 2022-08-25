@@ -1,0 +1,11 @@
+# CSADD073 - rctor is deprecated
+
+**Severity:** ![Warning](images/Warning.png) Warning
+
+Reports all method declarations of the name `rctor()` that have no parameters.
+
+## Solution
+
+You can also use the provided automatic Code Fix to remove the `rctor()` method. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu)
+
+Remove the `rctor()` method
