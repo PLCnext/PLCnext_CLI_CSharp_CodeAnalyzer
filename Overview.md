@@ -104,6 +104,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD073](Rules/CSADD073.md)      | rctor is deprecated                                                                                  | ![Warning](images/Warning.png) Warning          |
 | [CSADD074](Rules/CSADD074.md)      | Multidimensional Arrays are not supported yet                                                        | ![Error](images/Error.png) Error                |
 | [CSADD075](Rules/CSADD075.md)      | Only use Eno where possible                                                                          | ![Error](images/Error.png) Error                |
+| [CSADD076](Rules/CSADD076.md)      | Do not use POU attributes on abstract classes                                                        | ![Error](images/Error.png) Error                |
 
 ## Rule  groups
 
@@ -123,13 +124,13 @@ You can also suppress a rule only for a single code region [using the context me
 [CSADD002](Rules/CSADD002.md) [CSADD020](Rules/CSADD020.md) [CSADD021](Rules/CSADD021.md)
 
 * `[FunctionBlock]`
-  * [CSADD003](Rules/CSADD003.md) [CSADD071](Rules/CSADD071.md)
+  * [CSADD003](Rules/CSADD003.md) [CSADD071](Rules/CSADD071.md) [CSADD076](Rules/CSADD076.md)
 * `[Function]`
-  * [CSADD003](Rules/CSADD003.md) [CSADD019](Rules/CSADD019.md)
+  * [CSADD003](Rules/CSADD003.md) [CSADD019](Rules/CSADD019.md) [CSADD076](Rules/CSADD076.md)
  * `[FunctionContainer]`
-  * [CSADD046](Rules/CSADD046.md)
+  * [CSADD046](Rules/CSADD046.md) [CSADD076](Rules/CSADD076.md)
 * `[Program]`
-  * [CSADD003](Rules/CSADD003.md) [CSADD037](Rules/CSADD037.md)
+  * [CSADD003](Rules/CSADD003.md) [CSADD037](Rules/CSADD037.md) [CSADD076](Rules/CSADD076.md)
 * User Types
   * [CSADD024](Rules/CSADD024.md) [CSADD038](Rules/CSADD038.md) [CSADD039](Rules/CSADD039.md)
   * `[String]`
@@ -168,7 +169,7 @@ You can also suppress a rule only for a single code region [using the context me
 * `[GdsRetain]` and `[Retain]`
   * [CSADD053](Rules/CSADD053.md) [CSADD052](Rules/CSADD052.md) 
 * `[Function]`
-  * [CSADD054](Rules/CSADD054.md)
+  * [CSADD054](Rules/CSADD054.md) 
 * `[Output]`
   * [CSADD043](Rules/CSADD043.md) [CSADD044](Rules/CSADD044.md) [CSADD045](Rules/CSADD045.md) [CSADD066](Rules/CSADD066.md)
 * `[Initialization]` and `[Execution]`

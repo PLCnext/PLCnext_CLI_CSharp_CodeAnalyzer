@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](images/Error.png) Error
 
-Reports when `Init()`, `ctor()` or `__Init()` is called on a field of a `struct` attributed with `[Structure]` outside its `Init()` method.
+Reports when `Init()`, `ctor()` or `__Init()` is called on a field attributed with `[Structure]` outside its `Init()` method.
 
 ## Solution
 
