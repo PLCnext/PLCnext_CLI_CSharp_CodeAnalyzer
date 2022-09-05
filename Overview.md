@@ -46,7 +46,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD013](Rules/CSADD013.md)      | Field type needs correct DataType attribute                                                          | ![Error](images/Error.png) Error                |
 | [CSADD014](Rules/CSADD014.md)      | Output fields/parameters must not be Any                                                             | ![Error](images/Error.png) Error                |
 | [CSADD015](Rules/CSADD015.md)      | Do not use GdsRetain                                                                                 | ![Suggestion](images/Suggestion.png) Suggestion |
-| [CSADD018](Rules/CSADD018.md)      | Structure fields should be InOut pointers                                                            | ![Warning](images/Warning.png) Warning          |
+| [CSADD018](Rules/CSADD018.md)      | Structure fields should be InOut pointers                                                            | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
 | [CSADD020](Rules/CSADD020.md)      | Methods attributed Execution or Initialization are not allowed to have parameters                    | ![Error](images/Error.png) Error                |
 | [CSADD021](Rules/CSADD021.md)      | Methods can only have one Output parameter at the first position                                     | ![Error](images/Error.png) Error                |
@@ -68,7 +68,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD037](Rules/CSADD037.md)      | Program must not have Input Output or InOut attributes                                               | ![Error](images/Error.png) Error                |
 | [CSADD038](Rules/CSADD038.md)      | Init Methods of user types must not have an Initialization attribute                                 | ![Warning](images/Warning.png) Warning          |
 | [CSADD039](Rules/CSADD039.md)      | User type Init methods must not have parameters                                                      | ![Error](images/Error.png) Error                |
-| [CSADD040](Rules/CSADD040.md)      | Structure parameters should be ref Output                                                            | ![Suggestion](images/Suggestion.png) Suggestion |
+| [CSADD040](Rules/CSADD040.md)      | Structure parameters should use ref                                                                  | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD041](Rules/CSADD041.md)      | Init/ctor must only be called once in Init or __Init                                                 | ![Error](images/Error.png) Error                |
 | [CSADD042](Rules/CSADD042.md)      | unsafe blocks are only allowed when pointers are used inside                                         | ![Warning](images/Warning.png) Warning          |
 | [CSADD043](Rules/CSADD043.md)      | Output parameter name unequal to class name                                                          | ![Error](images/Error.png) Error                |
@@ -77,16 +77,16 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD046](Rules/CSADD046.md)      | Function Container Functions have to be static                                                       | ![Error](images/Error.png) Error                |
 | [CSADD047](Rules/CSADD047.md)      | Arrays must not have fields apart from the Anchor field                                              | ![Error](images/Error.png) Error                |
 | [CSADD048](Rules/CSADD048.md)      | Only use Initialization and Execution where correct                                                  | ![Error](images/Error.png) Error                |
-| [CSADD049](Rules/CSADD049.md)      | User attribute should only be used in Function Blocks	                                            | ![Error](images/Error.png) Error                |
+| [CSADD049](Rules/CSADD049.md)      | User attribute should only be used in Function Blocks	                                              | ![Error](images/Error.png) Error                |
 | [CSADD050](Rules/CSADD050.md)      | Input or Output fields and parameters shall not be pointers                                          | ![Error](images/Error.png) Error                |
-| [CSADD051](Rules/CSADD051.md)      | Structures must not have Any or Pointer fields	                                                    | ![Error](images/Error.png) Error                |
+| [CSADD051](Rules/CSADD051.md)      | Structures must not have Any or Pointer fields	                                                      | ![Error](images/Error.png) Error                |
 | [CSADD052](Rules/CSADD052.md)      | Retaining on Input can be better achieved with Variable Flag	                                        | ![Warning](images/Warning.png) Warning          |
-| [CSADD053](Rules/CSADD053.md)      | Retaining should only be used in FB or Program	                                                    | ![Error](images/Error.png) Error                |
+| [CSADD053](Rules/CSADD053.md)      | Retaining should only be used in FB or Program	                                                      | ![Error](images/Error.png) Error                |
 | [CSADD054](Rules/CSADD054.md)      | Only use Function attribute in Function Container or on classes                                      | ![Error](images/Error.png) Error                |
 | [CSADD055](Rules/CSADD055.md)      | Strings must not have fields apart from the s field                                                  | ![Error](images/Error.png) Error                |
 | [CSADD056](Rules/CSADD056.md)      | Do not use intern attributes	                                                                        | ![Error](images/Error.png) Error                |
 | [CSADD057](Rules/CSADD057.md)      | Namespace names must not be keywords                                                                 | ![Error](images/Error.png) Error                |
-| [CSADD058](Rules/CSADD058.md)      | Do not mix Retain and GdsRetain		                                                                | ![Error](images/Error.png) Error                |
+| [CSADD058](Rules/CSADD058.md)      | Do not mix Retain and GdsRetain		                                                                  | ![Error](images/Error.png) Error                |
 | [CSADD059](Rules/CSADD059.md)      | Only use Retaining where possible                                                                    | ![Error](images/Error.png) Error                |
 | [CSADD060](Rules/CSADD060.md)      | Only use Hidden on user defined data types and POUs	                                                | ![Error](images/Error.png) Error                |
 | [CSADD061](Rules/CSADD061.md)      | Only use NotOverridable on POUs	                                                                    | ![Error](images/Error.png) Error                |

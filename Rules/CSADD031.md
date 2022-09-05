@@ -4,7 +4,7 @@
 
 Checks user `[Array]`s (`struct`s with the attribute `[Array]`).
 When the type of the `Anchor` can be mapped to multiple IEC types, a default type is used.
-Consider using the `[DataType] `attribute to explicitly choose a mapped type.
+Consider using the `[DataType] `attribute on the `struct` to explicitly choose a mapped type.
 
 Ambiguous types and their IEC types are shwon in the following table (all mappings are shown inside the Readme.txt of each VS Template). If no `[DataType]` attribute is specified the type is mapped by default to the IEC data type in **bold** letters:
 
@@ -20,6 +20,6 @@ Ambiguous types and their IEC types are shwon in the following table (all mappin
 
 ## Solution
 
-You can also use the provided automatic Code Fixes to add a `[DataType]` attribute with one of the possible mappings inside. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu)
+You can also use the provided automatic Code Fixes to add a `[DataType]` attribute to the `struct` with one of the possible mappings inside. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu)
 
-Insert a `[DataType]` attribute with the name of the IEC type you want to map to.
+Insert a `[DataType]` attribute on the `struct` with the name of the IEC type you want to map to.
