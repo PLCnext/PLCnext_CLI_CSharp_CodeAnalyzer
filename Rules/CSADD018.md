@@ -3,7 +3,7 @@
 ![Suggestion](images/Suggestion.png) Suggestion
 
 Checks fields with the attributes `[Output]`, ` [Input]`, `[InOut]`, `[InPort]` or `[OutPort]` when the field type is a struct that was declared with `[Structure]` or `[Array]` attribute.
-If the field is large, it should be a pointer type with the `[InOut]` attribute to improve the performance.
+If the `struct` type is large, it should be a pointer type with the `[InOut]` attribute to improve the performance.
 
 The field is reported if:
 - it is not a pointer type
