@@ -2,7 +2,7 @@
 
 **Severity:** ![Error](images/Error.png) Error
 
-Reports the usage of the `[Invisible]` attribute if it is not inside `class`es attributed with `[FunctionBlock]`, `[Function]` or `[FunctionContainer]` and on fields or method parameters attributed with `[Input]`, `[Output]` or `[InOut]`.
+Reports the usage of the `[Invisible]` attribute if it is not on fields attributed with `[Input]`, `[Output]` or `[InOut]` inside `class`es attributed with `[FunctionBlock]`.
 
 ## Solution
 
