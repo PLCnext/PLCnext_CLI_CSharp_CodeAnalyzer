@@ -13,7 +13,7 @@ It applies when this is the case:
 		* `void`
 	* or
 		* `bool`
-		* and the `class` has the attribute `[Eno]` ( [see this GitHub example for an explanation of Eno](https://github.com/PLCnext/CSharpExamples/blob/master/PLCnext_CSharpExamples/13_EN_ENO/EN_ENO.md) )
+		* and the method has the attribute `[Eno]` ( [see this GitHub example for an explanation of Eno](https://github.com/PLCnext/CSharpExamples/blob/master/PLCnext_CSharpExamples/13_EN_ENO/EN_ENO.md) )
 * the name of the parameter is different than the method name
 
 
