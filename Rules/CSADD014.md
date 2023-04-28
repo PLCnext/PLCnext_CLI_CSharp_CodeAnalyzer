@@ -1,8 +1,8 @@
-# CSADD014 - Output fields/parameters must not be Any
+# CSADD014 - Fields of type Any must not be Outputs
 
 **Severity:** ![Error](../images/Error.png) Error
 
-Parameters and fields with the attribute `[Output]` must not be of type `Any`.
+Fields with the attribute `[Output]` must not be of type `Any`.
 
 
 ## Solution

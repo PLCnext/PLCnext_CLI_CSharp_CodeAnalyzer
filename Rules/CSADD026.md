@@ -20,7 +20,7 @@ All `struct`s with the attribute `[String]` must have these elements:
 
 If the Attribute's second Parameter is `true` (e.g. `[String(200, true)]`) instead these elements are necessary:
 * attribute (with Size parameter): `[StructLayout(LayoutKind.Explicit, Size = <2*value + 6>)]`
-* IecStringEx declaration: 
+* IecWString declaration: 
 	```c#
 	[FieldOffset(0)]
 	public IecWString s;

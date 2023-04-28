@@ -44,7 +44,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD011](Rules/CSADD011.md)      | Return type needs correct DataType attribute                                                         | ![Error](images/Error.png) Error                |
 | [CSADD012](Rules/CSADD012.md)      | Parameter type needs correct DataType attribute                                                      | ![Error](images/Error.png) Error                |
 | [CSADD013](Rules/CSADD013.md)      | Field type needs correct DataType attribute                                                          | ![Error](images/Error.png) Error                |
-| [CSADD014](Rules/CSADD014.md)      | Output fields/parameters must not be Any                                                             | ![Error](images/Error.png) Error                |
+| [CSADD014](Rules/CSADD014.md)      | Fields of type Any must not be Outputs                                                               | ![Error](images/Error.png) Error                |
 | [CSADD015](Rules/CSADD015.md)      | Do not use GdsRetain                                                                                 | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD018](Rules/CSADD018.md)      | Structure fields should be InOut pointers                                                            | ![Suggestion](images/Suggestion.png) Suggestion |
 | [CSADD019](Rules/CSADD019.md)      | Functions are not allowed to have attributed fields                                                  | ![Error](images/Error.png) Error                |
@@ -105,6 +105,7 @@ You can also suppress a rule only for a single code region [using the context me
 | [CSADD074](Rules/CSADD074.md)      | Multidimensional Arrays are not supported yet                                                        | ![Error](images/Error.png) Error                |
 | [CSADD075](Rules/CSADD075.md)      | Only use Eno where possible                                                                          | ![Error](images/Error.png) Error                |
 | [CSADD076](Rules/CSADD076.md)      | Do not use POU attributes on abstract classes                                                        | ![Error](images/Error.png) Error                |
+| [CSADD014](Rules/CSADD078.md)      | Parameters of type Any must not be InOuts                                                            | ![Error](images/Error.png) Error                |
 
 ## Rule  groups
 
@@ -117,7 +118,7 @@ You can also suppress a rule only for a single code region [using the context me
 * IEC type defined in DataType attributes have to suit the C# dotnet type
   * [CSADD011](Rules/CSADD011.md) [CSADD012](Rules/CSADD012.md) [CSADD0013 ](Rules/CSADD0013.md)[CSADD036](Rules/CSADD036.md) [CSADD032](Rules/CSADD032.md)
 * special rules for the type Any (and User Types and IecStrings)
-  * [CSADD014](Rules/CSADD014.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) 
+  * [CSADD014](Rules/CSADD014.md) [CSADD018](Rules/CSADD018.md) [CSADD022](Rules/CSADD022.md) [CSADD023](Rules/CSADD023.md) [CSADD040](Rules/CSADD040.md) [CSADD078](Rules/CSADD078.md) 
 
 ### IEC element structure
 
