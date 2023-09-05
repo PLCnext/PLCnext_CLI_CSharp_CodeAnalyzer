@@ -1,9 +1,0 @@
-# CSADD023 - Program port types must not be of type Any
-
-**Severity:** ![Error](../images/Error.png) Error
-
-Fields with the attributes `[InPort]` or `[OutPort]` must not have the type `Any`.
-
-## Solution
-
-Remove the attribute or change the data type to resolve the diagnostic.
