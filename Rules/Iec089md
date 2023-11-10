@@ -1,0 +1,10 @@
+# Iec089 - Also implement non-generic IComparer when implementing generic IComparer
+**Severity:** ![Error](../images/Error.png) Error
+
+To use implementations of generic `IComparer<T>` with methods of `List<T>` you have to implement non-generic `IComparer` too. Otherwise the eCLR does not support the usage.
+
+## Solution
+
+You can also use the provided automatic Code Fix to add the non-generic `IComparer` to the base list. ( Press Alt + Enter on the Error line to find the Code Fix in the context menu) 
+
+Implement the non-generic `IComparer`.
